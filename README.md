@@ -152,12 +152,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 # Dashboard Analysis
 
-![image](https://github.com/user-attachments/assets/e9dd2790-20b2-40ca-b99f-c25ac6099367)
-
-
-
-![image](https://github.com/user-attachments/assets/e6f24e29-efb9-4e66-a7bb-2113d6940750)
-
+![image](https://github.com/user-attachments/assets/d38767ea-8d7c-40a9-91eb-004f2e37f762)
 
 ### video
 
