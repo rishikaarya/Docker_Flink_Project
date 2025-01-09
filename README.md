@@ -32,80 +32,122 @@ Columns:
 
 ## Data Pipeline Process
 
-**1. Data Generation**
+**1. Environment Setup**
+   
+- Apache Flink, Kafka, and Elasticsearch were configured in the environment for data streaming, processing, and storage.
+- Required shell scripts and Python scripts were prepared for automation:
+a. `start_flink_nodatagen.sh`: To start Apache Flink without data generation.
+b. `convert.py`: To transform data into a Kafka-compatible format.
+c. `gen_sample.sh`: To generate and stream data to Kafka topics.
+d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
+   
+**2. Data Preparation**
 
-Synthetic datasets for energy consumption were generated using Avro schemas and the `gendata.sh` script:
+- Source Data: A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
+- Transformation: The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
+- Commands Executed:
+   python $HOME/Documents/fake/convert.py
+   chmod +x *.sh
+  
+**3. Data Ingestion into Kafka**
 
-     ./gendata.sh energy_consumption.avro energy_data.json 10000
-
-**2. Data Transformation**
-
-The generated JSON file was transformed into Kafka-compatible formats using a Python script:
-
-     python $HOME/Documents/convert.py
-
-**3. Kafka Ingestion**
-
-The transformed data was streamed into Kafka topics using the `gen_sample.sh` script:
-
-    ./gen_sample.sh /home/user/Documents/gendata/rev_energy_data.json | kafkacat -b localhost:9092 -t energy_data -K: -P
-
-**4. Real-Time Analysis with Apache Flink**
-
-Flink SQL was used to create real-time analytics tables for the dataset.
-
-    CREATE TABLE energy_data (
-    datetime TIMESTAMP(3),
-    home_id BIGINT,
-    energy_consumption_kWh DOUBLE,
-    temperature_setting_C DOUBLE,
+- Data was streamed into a Kafka topic named energy_data using `gen_sample.sh`.
+- Each record contained details such as energy consumption, appliance usage, and contextual attributes like season and occupancy status.
+- Command Executed:
+   ./gen_sample.sh /home/ashok/Documents/gendata/rev_energy_data.json 500 100 | kafkacat -b localhost:9092 -t energy_data -K: -P
+  
+**4. Real-Time Stream Processing with Apache Flink**
+   
+- Apache Flink consumed data from the `energy_data` Kafka topic for real-time processing and transformation.
+- A Flink SQL table `energy_data` was created to structure the data for downstream usage:
+     CREATE TABLE energy_data (
+    id BIGINT PRIMARY KEY,
+    datetime TIMESTAMP,
+    home_id INT,
+    energy_consumption_kWh FLOAT,
+    temperature_setting_C FLOAT,
     occupancy_status STRING,
     appliance STRING,
     usage_duration_minutes INT,
     season STRING,
     day_of_week STRING,
-    holiday BOOLEAN
+    holiday INT,
+    WATERMARK FOR datetime AS datetime - INTERVAL '5' SECOND
     ) WITH (
     'connector' = 'kafka',
     'topic' = 'energy_data',
     'scan.startup.mode' = 'earliest-offset',
     'properties.bootstrap.servers' = 'kafka:9094',
     'format' = 'json',
-    'json.timestamp-format.standard' = 'ISO-8601');
+    'json.timestamp-format.standard' = 'ISO-8601'
+     );
 
-**5. Data Enrichment**
+**5. Data Storage in Elasticsearch**
+- Processed data was stored in an Elasticsearch index `energy_index` for efficient querying and visualization.
+- A Flink SQL table `energy_index` was created to map the processed data into Elasticsearch:
+     CREATE TABLE energy_index (
+    id BIGINT PRIMARY KEY,
+    datetime TIMESTAMP,
+    home_id INT,
+    energy_consumption_kWh FLOAT,
+    temperature_setting_C FLOAT,
+    occupancy_status STRING,
+    appliance STRING,
+    usage_duration_minutes INT,
+    season STRING,
+    day_of_week STRING,
+    holiday INT
+    ) WITH (
+    'connector' = 'elasticsearch-7',
+    'hosts' = 'http://elasticsearch:9200',
+    'index' = 'energy_index',
+    'format' = 'json',
+    'json.fail-on-missing-field' = 'false',
+    'json.ignore-parse-errors' = 'true',
+    'json.timestamp-format.standard' = 'ISO-8601'
+     );
 
-A consolidated view was created to enrich the energy consumption data with derived metrics, such as energy usage per minute and appliance efficiency:
-
-    CREATE VIEW enriched_energy_data AS
-    SELECT 
-    datetime,
-    home_id,
-    energy_consumption_kWh,
-    temperature_setting_C,
-    occupancy_status,
-    appliance,
-    usage_duration_minutes,
-    energy_consumption_kWh / usage_duration_minutes AS energy_usage_per_minute,
-    CASE
-    WHEN occupancy_status = 'Occupied' THEN 'High'
-    ELSE 'Low'
-    END AS usage_priority,
-    season,
-    day_of_week,
-    holiday
+- Data was inserted into energy_index:
+  
+    INSERT INTO energy_index
+    SELECT *
     FROM energy_data;
 
-
-**6. Dashboard Creation**
-
-The data in the `enriched_energy_dashboard` index was visualized using Kibana.
-
-1. An index pattern for enriched_energy_dashboard was created in Kibana.
+**6. Data Visualization with Kibana**
    
-2. A comprehensive dashboard was designed to showcase:
-   
-- **Energy Consumption Trends:** Consumption by appliance and time.
-- **Occupancy Insights:** Impact of occupancy status on energy usage.
-- **Seasonal Effects:** Seasonal variations in energy usage.
-- **Efficiency Metrics:** Energy usage per minute and appliance-specific insights.
+- Kibana Integration: Elasticsearch was integrated with Kibana to enable real-time data visualization.
+- A dashboard was created on `localhost:5061` with visualizations for:
+a. Energy Trends: Energy consumption trends by appliances and time.
+b. Occupancy Impact: How occupancy affects energy usage.
+c. Seasonal Analysis: Patterns across different seasons.
+d. Efficiency Metrics: Appliance efficiency and usage duration analysis.
+
+**7. Validation and Monitoring**
+- Kafka consumer script `consumer.sh` was executed to monitor and validate data flowing through Kafka topics:
+      ./consumer.sh energy_data
+
+- The Flink SQL interface was accessed to confirm correct data processing.
+
+Key Highlights
+Real-Time Data Pipeline: Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
+Automated Data Streaming: Used shell scripts and Python for seamless automation.
+Actionable Insights: Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
+
+# Dashboard Analysis
+
+![image](https://github.com/user-attachments/assets/4d98c73e-5ac3-4705-bad8-975fd1aea0ba)
+
+## video
+
+https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
+
+
+
+
+
+
+
+
+
+
+
