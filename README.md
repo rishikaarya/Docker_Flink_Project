@@ -127,13 +127,10 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Kibana Integration: Elasticsearch was integrated with Kibana to enable real-time data visualization.
 - A dashboard was created on `localhost:5061` with visualizations for:
   
-a. Energy Trends: Energy consumption trends by appliances and time.
-
-b. Occupancy Impact: How occupancy affects energy usage.
-
-c. Seasonal Analysis: Patterns across different seasons.
-
-d. Efficiency Metrics: Appliance efficiency and usage duration analysis.
+**a. Energy Trends:** Energy consumption trends by appliances and time.
+**b. Occupancy Impact:** How occupancy affects energy usage.
+**c. Seasonal Analysis:** Patterns across different seasons.
+**d. Efficiency Metrics:** Appliance efficiency and usage duration analysis.
 
 **7. Validation and Monitoring**
 - Kafka consumer script `consumer.sh` was executed to monitor and validate data flowing through Kafka topics:
