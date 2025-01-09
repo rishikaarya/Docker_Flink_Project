@@ -36,9 +36,13 @@ Columns:
    
 - Apache Flink, Kafka, and Elasticsearch were configured in the environment for data streaming, processing, and storage.
 - Required shell scripts and Python scripts were prepared for automation:
+  
 a. `start_flink_nodatagen.sh`: To start Apache Flink without data generation.
+
 b. `convert.py`: To transform data into a Kafka-compatible format.
+
 c. `gen_sample.sh`: To generate and stream data to Kafka topics.
+
 d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
    
 **2. Data Preparation**
@@ -46,6 +50,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Source Data: A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
 - Transformation: The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
 - Commands Executed:
+  
    python $HOME/Documents/fake/convert.py
    chmod +x *.sh
   
