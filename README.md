@@ -60,64 +60,67 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Data was streamed into a Kafka topic named energy_data using `gen_sample.sh`.
 - Each record contained details such as energy consumption, appliance usage, and contextual attributes like season and occupancy status.
 - Command Executed:
-   ./gen_sample.sh /home/ashok/Documents/gendata/rev_energy_data.json 500 100 | kafkacat -b localhost:9092 -t energy_data -K: -P
+  
+      ./gen_sample.sh /home/ashok/Documents/gendata/rev_energy_data.json 500 100 | kafkacat -b localhost:9092 -t energy_data -K: -P
   
 **4. Real-Time Stream Processing with Apache Flink**
    
 - Apache Flink consumed data from the `energy_data` Kafka topic for real-time processing and transformation.
 - A Flink SQL table `energy_data` was created to structure the data for downstream usage:
+  
      CREATE TABLE energy_data (
-    id BIGINT PRIMARY KEY,
-    datetime TIMESTAMP,
-    home_id INT,
-    energy_consumption_kWh FLOAT,
-    temperature_setting_C FLOAT,
-    occupancy_status STRING,
-    appliance STRING,
-    usage_duration_minutes INT,
-    season STRING,
-    day_of_week STRING,
-    holiday INT,
-    WATERMARK FOR datetime AS datetime - INTERVAL '5' SECOND
-    ) WITH (
-    'connector' = 'kafka',
-    'topic' = 'energy_data',
-    'scan.startup.mode' = 'earliest-offset',
-    'properties.bootstrap.servers' = 'kafka:9094',
-    'format' = 'json',
-    'json.timestamp-format.standard' = 'ISO-8601'
-     );
+     id BIGINT PRIMARY KEY,
+     datetime TIMESTAMP,
+     home_id INT,
+     energy_consumption_kWh FLOAT,
+     temperature_setting_C FLOAT,
+     occupancy_status STRING,
+     appliance STRING,
+     usage_duration_minutes INT,
+     season STRING,
+     day_of_week STRING,
+     holiday INT,
+     WATERMARK FOR datetime AS datetime - INTERVAL '5' SECOND
+     ) WITH (
+     'connector' = 'kafka',
+     'topic' = 'energy_data',
+     'scan.startup.mode' = 'earliest-offset',
+     'properties.bootstrap.servers' = 'kafka:9094',
+     'format' = 'json',
+     'json.timestamp-format.standard' = 'ISO-8601'
+      );
 
 **5. Data Storage in Elasticsearch**
 - Processed data was stored in an Elasticsearch index `energy_index` for efficient querying and visualization.
 - A Flink SQL table `energy_index` was created to map the processed data into Elasticsearch:
+  
      CREATE TABLE energy_index (
-    id BIGINT PRIMARY KEY,
-    datetime TIMESTAMP,
-    home_id INT,
-    energy_consumption_kWh FLOAT,
-    temperature_setting_C FLOAT,
-    occupancy_status STRING,
-    appliance STRING,
-    usage_duration_minutes INT,
-    season STRING,
-    day_of_week STRING,
-    holiday INT
-    ) WITH (
-    'connector' = 'elasticsearch-7',
-    'hosts' = 'http://elasticsearch:9200',
-    'index' = 'energy_index',
-    'format' = 'json',
-    'json.fail-on-missing-field' = 'false',
-    'json.ignore-parse-errors' = 'true',
-    'json.timestamp-format.standard' = 'ISO-8601'
-     );
+     id BIGINT PRIMARY KEY,
+     datetime TIMESTAMP,
+     home_id INT,
+     energy_consumption_kWh FLOAT,
+     temperature_setting_C FLOAT,
+     occupancy_status STRING,
+     appliance STRING,
+     usage_duration_minutes INT,
+     season STRING,
+     day_of_week STRING,
+     holiday INT
+     ) WITH (
+     'connector' = 'elasticsearch-7',
+     'hosts' = 'http://elasticsearch:9200',
+     'index' = 'energy_index',
+     'format' = 'json',
+     'json.fail-on-missing-field' = 'false',
+     'json.ignore-parse-errors' = 'true',
+     'json.timestamp-format.standard' = 'ISO-8601'
+      );
 
 - Data was inserted into energy_index:
   
-    INSERT INTO energy_index
-    SELECT *
-    FROM energy_data;
+     INSERT INTO energy_index
+     SELECT *
+     FROM energy_data;
 
 **6. Data Visualization with Kibana**
    
