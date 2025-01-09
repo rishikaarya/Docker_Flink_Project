@@ -28,5 +28,5 @@ Columns:
 10. **holiday:** Indicator of whether the day is a holiday (1 if holiday, 0 otherwise).
     
 
-<img width="700" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
+<img width="850" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
 
