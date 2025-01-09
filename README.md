@@ -32,7 +32,7 @@ Columns:
 
 ## Data Pipeline Process
 
-###1. Environment Setup**
+### 1. Environment Setup
    
 - Apache Flink, Kafka, and Elasticsearch were configured in the environment for data streaming, processing, and storage.
 - Required shell scripts and Python scripts were prepared for automation:
