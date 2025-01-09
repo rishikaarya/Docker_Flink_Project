@@ -47,9 +47,9 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
    
 **2. Data Preparation**
 
-- Source Data: A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
-- Transformation: The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
-- Commands Executed:
+- **Source Data:** A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
+- **Transformation:** The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
+- **Commands Executed:**
   
        python $HOME/Documents/fake/convert.py
   
@@ -59,7 +59,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 - Data was streamed into a Kafka topic named energy_data using `gen_sample.sh`.
 - Each record contained details such as energy consumption, appliance usage, and contextual attributes like season and occupancy status.
-- Command Executed:
+- **Command Executed:**
   
       ./gen_sample.sh /home/ashok/Documents/gendata/rev_energy_data.json 500 100 | kafkacat -b localhost:9092 -t energy_data -K: -P
   
@@ -118,9 +118,9 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 - Data was inserted into energy_index:
   
-     INSERT INTO energy_index
-     SELECT *
-     FROM energy_data;
+        INSERT INTO energy_index
+        SELECT *
+        FROM energy_data;
 
 **6. Data Visualization with Kibana**
    
@@ -128,8 +128,11 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - A dashboard was created on `localhost:5061` with visualizations for:
   
 a. Energy Trends: Energy consumption trends by appliances and time.
+
 b. Occupancy Impact: How occupancy affects energy usage.
+
 c. Seasonal Analysis: Patterns across different seasons.
+
 d. Efficiency Metrics: Appliance efficiency and usage duration analysis.
 
 **7. Validation and Monitoring**
@@ -142,7 +145,9 @@ d. Efficiency Metrics: Appliance efficiency and usage duration analysis.
 **8. Key Highlights**
 
 a. Real-Time Data Pipeline: Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
+
 b. Automated Data Streaming: Used shell scripts and Python for seamless automation.
+
 c. Actionable Insights: Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
 
 # Dashboard Analysis
