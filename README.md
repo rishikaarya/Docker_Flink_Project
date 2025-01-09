@@ -165,16 +165,31 @@ https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
 
 **Average Energy Consumption by Occupancy Status**
 
-![image](https://github.com/user-attachments/assets/c331284e-a2e3-4a5d-a3ff-0a637bd0f0fa)
-
 **Observations:** 
 The chart shows that the average energy consumption during "Occupied" and "Unoccupied" periods is comparable, with only a slight difference.
 
 **Insights:**
 The small difference in energy consumption suggests that human presence has minimal impact on energy usage, potentially indicating reliance on devices or systems that operate regardless of occupancy.
 
+2. How does energy consumption vary between different types of appliances used?
 
+**Energy Consumption by Each Appliance **
 
+**Observations:** 
+The chart illustrates the average energy consumption for various appliances, showing that dishwashers and washing machines are the most energy-intensive, while lighting consumes the least energy.
+
+**Insights:**
+Dishwashers and washing machines should be the primary focus for energy efficiency measures. Potential interventions could include promoting energy-efficient models or optimizing their usage patterns to achieve better energy management.
+
+3. How does the average energy consumption trend vary across the days in January
+
+**Energy Consumption Trend over the Month**
+
+**Observations:** 
+The trend indicates a steady increase in average energy consumption over the month. This could be due to cumulative usage patterns, increasing reliance on heating or appliances as the month progresses. 
+
+**Insights:**
+January is typically associated with winter in many regions. The increasing trend reflects growing energy demands during colder days for the use of ppliances like heaters or HVAC systems for longer durations as the month progresses, contributing to higher consumption..
 
 
 
