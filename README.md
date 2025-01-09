@@ -79,7 +79,7 @@ Flink SQL was used to create real-time analytics tables for the dataset.
 A consolidated view was created to enrich the energy consumption data with derived metrics, such as energy usage per minute and appliance efficiency:
 
     CREATE VIEW enriched_energy_data AS
-SELECT 
+    SELECT 
     datetime,
     home_id,
     energy_consumption_kWh,
@@ -95,7 +95,7 @@ SELECT
     season,
     day_of_week,
     holiday
-FROM energy_data;
+    FROM energy_data;
 
 
 **6. Dashboard Creation**
@@ -106,7 +106,7 @@ The data in the `enriched_energy_dashboard` index was visualized using Kibana.
    
 2. A comprehensive dashboard was designed to showcase:
    
-- Energy Consumption Trends: Consumption by appliance and time.
--Occupancy Insights: Impact of occupancy status on energy usage.
--Seasonal Effects: Seasonal variations in energy usage.
--Efficiency Metrics: Energy usage per minute and appliance-specific insights.
+- **Energy Consumption Trends:** Consumption by appliance and time.
+- **Occupancy Insights:** Impact of occupancy status on energy usage.
+- **Seasonal Effects:** Seasonal variations in energy usage.
+- **Efficiency Metrics:** Energy usage per minute and appliance-specific insights.
