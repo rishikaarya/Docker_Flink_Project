@@ -126,6 +126,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
    
 - Kibana Integration: Elasticsearch was integrated with Kibana to enable real-time data visualization.
 - A dashboard was created on `localhost:5061` with visualizations for:
+  
 a. Energy Trends: Energy consumption trends by appliances and time.
 b. Occupancy Impact: How occupancy affects energy usage.
 c. Seasonal Analysis: Patterns across different seasons.
@@ -133,14 +134,16 @@ d. Efficiency Metrics: Appliance efficiency and usage duration analysis.
 
 **7. Validation and Monitoring**
 - Kafka consumer script `consumer.sh` was executed to monitor and validate data flowing through Kafka topics:
+  
       ./consumer.sh energy_data
 
 - The Flink SQL interface was accessed to confirm correct data processing.
 
-Key Highlights
-Real-Time Data Pipeline: Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
-Automated Data Streaming: Used shell scripts and Python for seamless automation.
-Actionable Insights: Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
+**8. Key Highlights**
+
+a. Real-Time Data Pipeline: Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
+b. Automated Data Streaming: Used shell scripts and Python for seamless automation.
+c. Actionable Insights: Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
 
 # Dashboard Analysis
 
