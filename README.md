@@ -68,7 +68,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Apache Flink consumed data from the `energy_data` Kafka topic for real-time processing and transformation.
 - A Flink SQL table `energy_data` was created to structure the data for downstream usage:
   
-     CREATE TABLE energy_data (
+      CREATE TABLE energy_data (
      id BIGINT PRIMARY KEY,
      datetime TIMESTAMP,
      home_id INT,
