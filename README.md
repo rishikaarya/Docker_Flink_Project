@@ -28,7 +28,7 @@ Columns:
 10. **holiday:** Indicator of whether the day is a holiday (1 if holiday, 0 otherwise).
     
 
-<img width="850" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
+<img width="500" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
 
 ## Data Pipeline Process
 
@@ -38,23 +38,23 @@ Synthetic datasets for energy consumption were generated using Avro schemas and 
 
      ./gendata.sh energy_consumption.avro energy_data.json 10000
 
-2. Data Transformation
+**2. Data Transformation**
 
 The generated JSON file was transformed into Kafka-compatible formats using a Python script:
 
-python $HOME/Documents/convert.py
+     python $HOME/Documents/convert.py
 
-3. Kafka Ingestion
+**3. Kafka Ingestion**
 
-The transformed data was streamed into Kafka topics using the gen_sample.sh script:
+The transformed data was streamed into Kafka topics using the `gen_sample.sh` script:
 
-./gen_sample.sh /home/user/Documents/gendata/rev_energy_data.json | kafkacat -b localhost:9092 -t energy_data -K: -P
-4. Real-Time Analysis with Apache Flink
+    ./gen_sample.sh /home/user/Documents/gendata/rev_energy_data.json | kafkacat -b localhost:9092 -t energy_data -K: -P
+
+**4. Real-Time Analysis with Apache Flink**
 
 Flink SQL was used to create real-time analytics tables for the dataset.
 
-Energy Consumption Table (energy_data)
-CREATE TABLE energy_data (
+`CREATE TABLE energy_data (
     datetime TIMESTAMP(3),
     home_id BIGINT,
     energy_consumption_kWh DOUBLE,
@@ -73,7 +73,8 @@ CREATE TABLE energy_data (
     'format' = 'json',
     'json.timestamp-format.standard' = 'ISO-8601'
 );
-5. Data Enrichment
+`
+**5. Data Enrichment**
 
 A consolidated view was created to enrich the energy consumption data with derived metrics, such as energy usage per minute and appliance efficiency:
 
