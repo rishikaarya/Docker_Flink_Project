@@ -12,7 +12,7 @@ This project showcases the development of a scalable data pipeline capable of pr
 
 ## Dataset Description
 
-The dataset provides synthetic data on smart home energy usage, detailing electricity consumption, appliance usage, temperature settings, and occupancy status. It is designed to help analyze energy consumption patterns, identify energy-saving opportunities, optimize energy usage, and develop smart home automation solutions.
+The dataset provides synthetic data on smart home energy usage, detailing electricity consumption, appliance usage, temperature settings, and occupancy status. It is designed to help analyze energy consumption patterns, identify energy-saving opportunities, optimize energy usage, and develop smart home automation solutions. The dataset can be used to identify trends in energy consumption, forecast energy demand, enhance the efficiency of smart home systems, and support the development of automated energy-saving solutions.
 
 Columns:
 
@@ -27,7 +27,6 @@ Columns:
 9. **day_of_week:** Day of the week (e.g., Monday, Tuesday).
 10. **holiday:** Indicator of whether the day is a holiday (1 if holiday, 0 otherwise).
     
-The dataset can be used to identify trends in energy consumption, forecast energy demand, enhance the efficiency of smart home systems, and support the development of automated energy-saving solutions.
 
-<img width="1090" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
+<img width="700" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
 
