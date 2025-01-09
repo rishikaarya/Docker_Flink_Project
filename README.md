@@ -32,9 +32,9 @@ Columns:
 
 ## Data Pipeline Process
 
-1. Data Generation
+**1. Data Generation**
 
-Synthetic datasets for energy consumption were generated using Avro schemas and the gendata.sh script:
+Synthetic datasets for energy consumption were generated using Avro schemas and the `gendata.sh` script:
 
      ./gendata.sh energy_consumption.avro energy_data.json 10000
 
