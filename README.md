@@ -36,7 +36,7 @@ Columns:
 
 Synthetic datasets for energy consumption were generated using Avro schemas and the gendata.sh script:
 
-         ./gendata.sh energy_consumption.avro energy_data.json 10000
+     ./gendata.sh energy_consumption.avro energy_data.json 10000
 
 2. Data Transformation
 
