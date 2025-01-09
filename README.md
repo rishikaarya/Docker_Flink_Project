@@ -45,7 +45,7 @@ c. `gen_sample.sh`: To generate and stream data to Kafka topics.
 
 d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
    
-**2. Data Preparation**
+ ### 2. Data Preparation
 
 - **Source Data:** A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
 - **Transformation:** The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
@@ -55,7 +55,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
   
        chmod +x *.sh
   
-**3. Data Ingestion into Kafka**
+### 3. Data Ingestion into Kafka
 
 - Data was streamed into a Kafka topic named energy_data using `gen_sample.sh`.
 - Each record contained details such as energy consumption, appliance usage, and contextual attributes like season and occupancy status.
@@ -63,7 +63,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
   
       ./gen_sample.sh /home/ashok/Documents/gendata/rev_energy_data.json 500 100 | kafkacat -b localhost:9092 -t energy_data -K: -P
   
-**4. Real-Time Stream Processing with Apache Flink**
+### 4. Real-Time Stream Processing with Apache Flink
    
 - Apache Flink consumed data from the `energy_data` Kafka topic for real-time processing and transformation.
 - A Flink SQL table `energy_data` was created to structure the data for downstream usage:
@@ -90,7 +90,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
       'json.timestamp-format.standard' = 'ISO-8601'
        );
 
-**5. Data Storage in Elasticsearch**
+### 5. Data Storage in Elasticsearch
 - Processed data was stored in an Elasticsearch index `energy_index` for efficient querying and visualization.
 - A Flink SQL table `energy_index` was created to map the processed data into Elasticsearch:
   
@@ -122,7 +122,7 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
         SELECT *
         FROM energy_data;
 
-**6. Data Visualization with Kibana**
+### 6. Data Visualization with Kibana
    
 - Kibana Integration: Elasticsearch was integrated with Kibana to enable real-time data visualization.
 - A dashboard was created on `localhost:5061` with visualizations for:
@@ -135,14 +135,14 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 **d. Efficiency Metrics:** Appliance efficiency and usage duration analysis.
 
-**7. Validation and Monitoring**
+### 7. Validation and Monitoring
 - Kafka consumer script `consumer.sh` was executed to monitor and validate data flowing through Kafka topics:
   
       ./consumer.sh energy_data
 
 - The Flink SQL interface was accessed to confirm correct data processing.
 
-**8. Key Highlights**
+### 8. Key Highlights
 
 **a. Real-Time Data Pipeline:** Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
 
