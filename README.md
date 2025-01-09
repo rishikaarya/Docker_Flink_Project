@@ -94,27 +94,27 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Processed data was stored in an Elasticsearch index `energy_index` for efficient querying and visualization.
 - A Flink SQL table `energy_index` was created to map the processed data into Elasticsearch:
   
-     CREATE TABLE energy_index (
-     id BIGINT PRIMARY KEY,
-     datetime TIMESTAMP,
-     home_id INT,
-     energy_consumption_kWh FLOAT,
-     temperature_setting_C FLOAT,
-     occupancy_status STRING,
-     appliance STRING,
-     usage_duration_minutes INT,
-     season STRING,
-     day_of_week STRING,
-     holiday INT
-     ) WITH (
-     'connector' = 'elasticsearch-7',
-     'hosts' = 'http://elasticsearch:9200',
-     'index' = 'energy_index',
-     'format' = 'json',
-     'json.fail-on-missing-field' = 'false',
-     'json.ignore-parse-errors' = 'true',
-     'json.timestamp-format.standard' = 'ISO-8601'
-      );
+       CREATE TABLE energy_index (
+       id BIGINT PRIMARY KEY,
+       datetime TIMESTAMP,
+       home_id INT,
+       energy_consumption_kWh FLOAT,
+       temperature_setting_C FLOAT,
+       occupancy_status STRING,
+       appliance STRING,
+       usage_duration_minutes INT,
+       season STRING,
+       day_of_week STRING,
+       holiday INT
+       ) WITH (
+       'connector' = 'elasticsearch-7',
+       'hosts' = 'http://elasticsearch:9200',
+       'index' = 'energy_index',
+       'format' = 'json',
+       'json.fail-on-missing-field' = 'false',
+       'json.ignore-parse-errors' = 'true',
+       'json.timestamp-format.standard' = 'ISO-8601'
+        );
 
 - Data was inserted into energy_index:
   
