@@ -28,7 +28,7 @@ Columns:
 10. **holiday:** Indicator of whether the day is a holiday (1 if holiday, 0 otherwise).
     
 
-<img width="500" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
+<img width="650" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
 
 ## Data Pipeline Process
 
@@ -54,7 +54,7 @@ The transformed data was streamed into Kafka topics using the `gen_sample.sh` sc
 
 Flink SQL was used to create real-time analytics tables for the dataset.
 
-`CREATE TABLE energy_data (
+       CREATE TABLE energy_data (
     datetime TIMESTAMP(3),
     home_id BIGINT,
     energy_consumption_kWh DOUBLE,
