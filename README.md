@@ -72,7 +72,6 @@ Flink SQL was used to create real-time analytics tables for the dataset.
     'properties.bootstrap.servers' = 'kafka:9094',
     'format' = 'json',
     'json.timestamp-format.standard' = 'ISO-8601');
-`
 
 **5. Data Enrichment**
 
@@ -89,8 +88,8 @@ A consolidated view was created to enrich the energy consumption data with deriv
     usage_duration_minutes,
     energy_consumption_kWh / usage_duration_minutes AS energy_usage_per_minute,
     CASE
-        WHEN occupancy_status = 'Occupied' THEN 'High'
-        ELSE 'Low'
+    WHEN occupancy_status = 'Occupied' THEN 'High'
+    ELSE 'Low'
     END AS usage_priority,
     season,
     day_of_week,
