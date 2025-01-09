@@ -128,8 +128,11 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - A dashboard was created on `localhost:5061` with visualizations for:
   
 **a. Energy Trends:** Energy consumption trends by appliances and time.
+
 **b. Occupancy Impact:** How occupancy affects energy usage.
+
 **c. Seasonal Analysis:** Patterns across different seasons.
+
 **d. Efficiency Metrics:** Appliance efficiency and usage duration analysis.
 
 **7. Validation and Monitoring**
@@ -141,11 +144,11 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 **8. Key Highlights**
 
-a. Real-Time Data Pipeline: Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
+**a. Real-Time Data Pipeline:** Built a robust pipeline using Kafka, Flink, Elasticsearch, and Kibana.
 
-b. Automated Data Streaming: Used shell scripts and Python for seamless automation.
+**b. Automated Data Streaming:** Used shell scripts and Python for seamless automation.
 
-c. Actionable Insights: Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
+**c. Actionable Insights:** Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
 
 # Dashboard Analysis
 
