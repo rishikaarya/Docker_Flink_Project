@@ -150,13 +150,29 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 
 **c. Actionable Insights:** Enabled real-time visualization of energy consumption patterns to drive meaningful insights.
 
+
 # Dashboard Analysis
 
 ![image](https://github.com/user-attachments/assets/d38767ea-8d7c-40a9-91eb-004f2e37f762)
 
-### video
+### Video
 
 https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
+
+### Charts 
+
+1. How does the average energy consumption differ by occupancy status? 
+
+**Average Energy Consumption by Occupancy Status**
+
+![image](https://github.com/user-attachments/assets/5f520562-1991-48dd-a6fb-6174581b5f61)
+
+**Observations:** 
+The chart shows that the average energy consumption during "Occupied" and "Unoccupied" periods is comparable, with only a slight difference.
+
+**Insights:**
+The small difference in energy consumption suggests that human presence has minimal impact on energy usage, potentially indicating reliance on devices or systems that operate regardless of occupancy.
+
 
 
 
