@@ -69,26 +69,26 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - A Flink SQL table `energy_data` was created to structure the data for downstream usage:
   
       CREATE TABLE energy_data (
-     id BIGINT PRIMARY KEY,
-     datetime TIMESTAMP,
-     home_id INT,
-     energy_consumption_kWh FLOAT,
-     temperature_setting_C FLOAT,
-     occupancy_status STRING,
-     appliance STRING,
-     usage_duration_minutes INT,
-     season STRING,
-     day_of_week STRING,
-     holiday INT,
-     WATERMARK FOR datetime AS datetime - INTERVAL '5' SECOND
-     ) WITH (
-     'connector' = 'kafka',
-     'topic' = 'energy_data',
-     'scan.startup.mode' = 'earliest-offset',
-     'properties.bootstrap.servers' = 'kafka:9094',
-     'format' = 'json',
-     'json.timestamp-format.standard' = 'ISO-8601'
-      );
+      id BIGINT PRIMARY KEY,
+      datetime TIMESTAMP,
+      home_id INT,
+      energy_consumption_kWh FLOAT,
+      temperature_setting_C FLOAT,
+      occupancy_status STRING,
+      appliance STRING,
+      usage_duration_minutes INT,
+      season STRING,
+      day_of_week STRING,
+      holiday INT,
+      WATERMARK FOR datetime AS datetime - INTERVAL '5' SECOND
+      ) WITH (
+      'connector' = 'kafka',
+      'topic' = 'energy_data',
+      'scan.startup.mode' = 'earliest-offset',
+      'properties.bootstrap.servers' = 'kafka:9094',
+      'format' = 'json',
+      'json.timestamp-format.standard' = 'ISO-8601'
+       );
 
 **5. Data Storage in Elasticsearch**
 - Processed data was stored in an Elasticsearch index `energy_index` for efficient querying and visualization.
