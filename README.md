@@ -165,7 +165,7 @@ https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
 
 **Average Energy Consumption by Occupancy Status**
 
-![image](https://github.com/user-attachments/assets/59c0aae3-faa5-436a-942c-3ac7583a755f)
+![image](https://github.com/user-attachments/assets/f90167f9-da8c-4f6a-885a-70ccf2cc863c)
 
 **Observations:** 
 The chart shows that the average energy consumption during "Occupied" and "Unoccupied" periods is comparable, with only a slight difference.
