@@ -50,9 +50,8 @@ d. `consumer.sh`: To verify and monitor Kafka topic data consumption.
 - Source Data: A synthetic energy consumption dataset in JSON format, `rev_energy_data.json`, was prepared.
 - Transformation: The JSON file was converted into key-value pairs using `convert.py` for Kafka ingestion.
 - Commands Executed:
-  
-   python $HOME/Documents/fake/convert.py
-   chmod +x *.sh
+       python $HOME/Documents/fake/convert.py
+       chmod +x *.sh
   
 **3. Data Ingestion into Kafka**
 
