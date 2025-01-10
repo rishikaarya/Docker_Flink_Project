@@ -233,7 +233,7 @@ The high energy consumption of HVAC systems and refrigerators during extreme wea
 
 8. Which appliances contribute the most to energy consumption in the top 5 homes with maximum energy usage?
    
-**Top 5 homes with Max Energy Consumption by Appliance Type **
+**Top 5 homes with Max Energy Consumption by Appliance Type**
 
 **Observations:** 
 The bar chart shows that HVAC systems and refrigerators are the largest contributors to energy consumption in most of these homes. Homes 56 and 86 exhibit the highest overall energy usage, with HVAC accounting for a significant share in both. Other appliances like lighting, washing machines, and electronics contribute comparatively less but vary in significance across homes.
@@ -241,3 +241,45 @@ The bar chart shows that HVAC systems and refrigerators are the largest contribu
 **Insights:**
 The dominance of HVAC and refrigerators in energy consumption highlights their role in driving high energy usage in these homes. This suggests that targeted strategies, such as energy-efficient HVAC systems, better insulation to reduce HVAC workload, and upgrading refrigerators to more efficient models, could significantly reduce energy usage in these households. 
 
+9. Which days of the week have the highest energy consumption?
+    
+**Week Days with Higher Energy Consumption**
+
+**Observations:** 
+The chart reveals that Saturday, Friday, and Sunday stand out as the days with the highest energy consumption. In contrast, midweek days, such as Wednesday, show significantly lower energy usage. This suggests a notable difference in consumption patterns between weekends and weekdays, likely influenced by lifestyle or activity changes.
+
+**Insights:**
+Higher energy consumption on weekends and near-weekend days may be due to increased household activities such as laundry, cleaning, and cooking, as more people stay at home during these times. On weekdays, particularly midweek, energy usage appears to be lower, possibly because people spend more time at work or outside the home.
+
+10. Which homes have the longest appliance usage durations?
+
+**Top 10 homes with Max usage duration(mins)**
+
+**Observations:** 
+The table lists the top 10 homes with the highest appliance usage durations. Home IDs 8, 11, 19, 53, 87, and 94 share the longest recorded duration of 119 minutes, while the remaining homes (20, 29, 40, and 76) have slightly lower durations of 118 minutes. 
+
+**Insights:**
+The high appliance usage durations in these homes suggest heavy reliance on specific energy-intensive appliances or consistent usage patterns. These durations might be linked to different activities carried throughout the day. 
+
+# Managerial Insights 
+
+**1. Occupancy and Automation**
+Energy usage shows minimal variation between occupied and unoccupied periods, indicating a reliance on always-on or automated systems. Efforts should focus on optimizing these systems for efficiency rather than solely addressing user behavior.
+
+**2. Appliance Energy Optimization**
+Dishwashers, washing machines, and HVAC systems are the most energy-intensive appliances. Managers should prioritize promoting energy-efficient models and educating homeowners about optimal usage practices, such as scheduling appliances during off-peak hours.
+
+**3. Seasonal Consumption Trends**
+HVAC systems drive higher energy usage in summer and winter, while spring exhibits the highest overall consumption, potentially due to transitional weather demands. Insulation improvements and smart thermostats can help reduce seasonal spikes.
+
+**4. Behavioral Patterns and Weekends**
+Energy consumption is highest during weekends, Fridays, and holidays, reflecting increased household activities. Managers can implement time-of-use pricing or energy-saving campaigns targeting these high-demand periods to manage consumption more effectively.
+
+**5. Temperature-Driven Usage**
+Energy consumption rises with increased temperature settings, emphasizing the need for smart thermostats and homeowner education on maintaining efficient temperature settings.
+
+**6. Energy Usage in High-Consumption Homes**
+A small subset of homes exhibits consistently long appliance usage durations and higher energy consumption, driven by HVAC and refrigerators. Personalized energy audits or targeted interventions in these homes can yield significant savings.
+
+**7. Seasonal and Appliance Insights**
+HVAC and refrigerators are the primary drivers of energy consumption across all seasons. Managers should consider rebate programs for energy-efficient HVAC systems and refrigerators to reduce long-term energy costs.
