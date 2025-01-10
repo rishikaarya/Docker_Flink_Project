@@ -193,7 +193,7 @@ January is typically associated with winter in many regions. The increasing tren
 
 4. How does the energy usage duration differ between holidays and non-holidays across the days of the week?
 
-**Weekly Energy Usage Duration(mins): Holidays vs Non - Holidays **
+**Weekly Energy Usage Duration(mins): Holidays vs Non - Holidays**
 
 **Observations:** 
 It shows that energy usage on holidays is evenly distributed across the week, with no significant peaks or dips. On non-holidays, energy usage is relatively consistent but shows a slight increase on Thursdays. The highest energy usage duration (72–90 minutes) is predominantly observed during weekends and holidays, indicating increased usage during these times. 
@@ -263,23 +263,23 @@ The high appliance usage durations in these homes suggest heavy reliance on spec
 
 # Managerial Insights 
 
-**1. Occupancy and Automation**
+**1. Occupancy and Automation:**
 Energy usage shows minimal variation between occupied and unoccupied periods, indicating a reliance on always-on or automated systems. Efforts should focus on optimizing these systems for efficiency rather than solely addressing user behavior.
 
-**2. Appliance Energy Optimization**
+**2. Appliance Energy Optimization:**
 Dishwashers, washing machines, and HVAC systems are the most energy-intensive appliances. Managers should prioritize promoting energy-efficient models and educating homeowners about optimal usage practices, such as scheduling appliances during off-peak hours.
 
-**3. Seasonal Consumption Trends**
+**3. Seasonal Consumption Trends:**
 HVAC systems drive higher energy usage in summer and winter, while spring exhibits the highest overall consumption, potentially due to transitional weather demands. Insulation improvements and smart thermostats can help reduce seasonal spikes.
 
-**4. Behavioral Patterns and Weekends**
+**4. Behavioral Patterns and Weekends:**
 Energy consumption is highest during weekends, Fridays, and holidays, reflecting increased household activities. Managers can implement time-of-use pricing or energy-saving campaigns targeting these high-demand periods to manage consumption more effectively.
 
-**5. Temperature-Driven Usage**
+**5. Temperature-Driven Usage:**
 Energy consumption rises with increased temperature settings, emphasizing the need for smart thermostats and homeowner education on maintaining efficient temperature settings.
 
-**6. Energy Usage in High-Consumption Homes**
+**6. Energy Usage in High-Consumption Homes:**
 A small subset of homes exhibits consistently long appliance usage durations and higher energy consumption, driven by HVAC and refrigerators. Personalized energy audits or targeted interventions in these homes can yield significant savings.
 
-**7. Seasonal and Appliance Insights**
+**7. Seasonal and Appliance Insights:**
 HVAC and refrigerators are the primary drivers of energy consumption across all seasons. Managers should consider rebate programs for energy-efficient HVAC systems and refrigerators to reduce long-term energy costs.
