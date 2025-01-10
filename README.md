@@ -164,6 +164,7 @@ https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
 1. How does the average energy consumption differ by occupancy status? 
 
 **Average Energy Consumption by Occupancy Status**
+
 ![image](https://github.com/user-attachments/assets/c09c5608-e359-4bab-b153-4aa59b26034f)
 
 **Observations:** 
@@ -175,6 +176,7 @@ The small difference in energy consumption suggests that human presence has mini
 2. How does energy consumption vary between different types of appliances used?
 
 **Energy Consumption by Each Appliance**
+
 ![image](https://github.com/user-attachments/assets/d99a548a-f23c-41bc-84a0-76319ffd3b8f)
 
 **Observations:** 
@@ -186,6 +188,7 @@ Dishwashers and washing machines should be the primary focus for energy efficien
 3. How does the average energy consumption trend vary across the days in January?
 
 **Energy Consumption Trend over the Month** 
+
 ![image](https://github.com/user-attachments/assets/fa100c38-2008-4c9b-88f9-0c88f929cfcd)
 
 **Observations:** 
@@ -198,6 +201,8 @@ January is typically associated with winter in many regions. The increasing tren
 
 **Weekly Energy Usage Duration(mins): Holidays vs Non - Holidays**
 
+![image](https://github.com/user-attachments/assets/8469581e-42c9-45e1-903b-c68996122fc3)
+
 **Observations:** 
 It shows that energy usage on holidays is evenly distributed across the week, with no significant peaks or dips. On non-holidays, energy usage is relatively consistent but shows a slight increase on Thursdays. The highest energy usage duration (72–90 minutes) is predominantly observed during weekends and holidays, indicating increased usage during these times. 
 
@@ -207,6 +212,8 @@ The higher energy usage during weekends and holidays suggests that people spend 
 5. How does energy consumption vary across different seasons?
 
 **Energy Consumption By Season**
+
+![image](https://github.com/user-attachments/assets/3d5bd22d-f4af-4874-9060-fb9cb66df0b4)
 
 **Observations:** 
 The distribution is relatively even, with Spring showing the highest energy consumption and Winter the lowest. The differences between seasons are marginal, with a variation of less than 3%.
@@ -218,6 +225,8 @@ The higher energy consumption in Spring and Summer could be attributed to the in
 
 **Effect of Temperature on Energy Consumption**
 
+![image](https://github.com/user-attachments/assets/b9bcd7d1-00f4-49d7-a0d8-8ca20fec28d3)
+
 **Observations:** 
 The chart demonstrates a clear upward trend in average energy consumption as the temperature setting increases. At lower temperature settings, energy consumption is minimal but rises steadily with higher temperature settings, peaking at around 22.7°C and above. It shows that as the temperature setting increases, energy consumption also increases and vice varsa.  
 
@@ -227,6 +236,9 @@ It indicates that energy consumption increases as the temperature setting rises 
 7.How does seasonal energy consumption vary across different appliance types?
 
 **Seasonal Energy consumption by Appliance Type** 
+
+![image](https://github.com/user-attachments/assets/89c03f94-e808-4aa7-89c1-42545f8456a6)
+
 
 **Observations:** 
 The heatmap illustrates seasonal variations in energy consumption for various appliances. Appliances such as HVAC and refrigerators show consistently higher energy usage, particularly in summer and winter, likely due to increased cooling and heating demands. In contrast, appliances like dishwashers and washing machines exhibit relatively stable energy consumption across seasons, with minimal seasonal variation.
@@ -238,6 +250,8 @@ The high energy consumption of HVAC systems and refrigerators during extreme wea
    
 **Top 5 homes with Max Energy Consumption by Appliance Type**
 
+![image](https://github.com/user-attachments/assets/4897b477-31e6-4aa4-864e-fb95622652ef)
+
 **Observations:** 
 The bar chart shows that HVAC systems and refrigerators are the largest contributors to energy consumption in most of these homes. Homes 56 and 86 exhibit the highest overall energy usage, with HVAC accounting for a significant share in both. Other appliances like lighting, washing machines, and electronics contribute comparatively less but vary in significance across homes.
 
@@ -248,6 +262,8 @@ The dominance of HVAC and refrigerators in energy consumption highlights their r
     
 **Week Days with Higher Energy Consumption**
 
+![image](https://github.com/user-attachments/assets/bd236ed0-7b3f-40f4-9dae-f24a526abb60)
+
 **Observations:** 
 The chart reveals that Saturday, Friday, and Sunday stand out as the days with the highest energy consumption. In contrast, midweek days, such as Wednesday, show significantly lower energy usage. This suggests a notable difference in consumption patterns between weekends and weekdays, likely influenced by lifestyle or activity changes.
 
@@ -257,6 +273,8 @@ Higher energy consumption on weekends and near-weekend days may be due to increa
 10. Which homes have the longest appliance usage durations?
 
 **Top 10 homes with Max usage duration(mins)**
+
+![image](https://github.com/user-attachments/assets/f221b2a4-9d63-4b68-b226-49512b031635)
 
 **Observations:** 
 The table lists the top 10 homes with the highest appliance usage durations. Home IDs 8, 11, 19, 53, 87, and 94 share the longest recorded duration of 119 minutes, while the remaining homes (20, 29, 40, and 76) have slightly lower durations of 118 minutes. 
