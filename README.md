@@ -164,6 +164,7 @@ https://github.com/user-attachments/assets/9155bbd7-1697-4c9c-8618-6036ce979596
 1. How does the average energy consumption differ by occupancy status? 
 
 **Average Energy Consumption by Occupancy Status**
+blob:https://web.whatsapp.com/c802bedf-fe6d-4943-9790-7be83aca854a![image](https://github.com/user-attachments/assets/6fe3efa2-11d6-4a7e-9fdf-9c1bb50c5eca)
 
 **Observations:** 
 The chart shows that the average energy consumption during "Occupied" and "Unoccupied" periods is comparable, with only a slight difference.
@@ -174,6 +175,7 @@ The small difference in energy consumption suggests that human presence has mini
 2. How does energy consumption vary between different types of appliances used?
 
 **Energy Consumption by Each Appliance**
+blob:https://web.whatsapp.com/4f947395-f2be-447a-849b-ae52f1b5664a![image](https://github.com/user-attachments/assets/4e50b9f9-fd62-4b9a-bb0f-0d79c5cc2898)
 
 **Observations:** 
 The chart illustrates the average energy consumption for various appliances, showing that dishwashers and washing machines are the most energy-intensive, while lighting consumes the least energy.
