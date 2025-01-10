@@ -173,7 +173,7 @@ The small difference in energy consumption suggests that human presence has mini
 
 2. How does energy consumption vary between different types of appliances used?
 
-**Energy Consumption by Each Appliance **
+**Energy Consumption by Each Appliance**
 
 **Observations:** 
 The chart illustrates the average energy consumption for various appliances, showing that dishwashers and washing machines are the most energy-intensive, while lighting consumes the least energy.
@@ -181,9 +181,9 @@ The chart illustrates the average energy consumption for various appliances, sho
 **Insights:**
 Dishwashers and washing machines should be the primary focus for energy efficiency measures. Potential interventions could include promoting energy-efficient models or optimizing their usage patterns to achieve better energy management.
 
-3. How does the average energy consumption trend vary across the days in January
+3. How does the average energy consumption trend vary across the days in January?
 
-**Energy Consumption Trend over the Month**
+**Energy Consumption Trend over the Month** 
 
 **Observations:** 
 The trend indicates a steady increase in average energy consumption over the month. This could be due to cumulative usage patterns, increasing reliance on heating or appliances as the month progresses. 
@@ -191,11 +191,53 @@ The trend indicates a steady increase in average energy consumption over the mon
 **Insights:**
 January is typically associated with winter in many regions. The increasing trend reflects growing energy demands during colder days for the use of ppliances like heaters or HVAC systems for longer durations as the month progresses, contributing to higher consumption..
 
+4. How does the energy usage duration differ between holidays and non-holidays across the days of the week?
 
+**Weekly Energy Usage Duration(mins): Holidays vs Non - Holidays **
 
+**Observations:** 
+It shows that energy usage on holidays is evenly distributed across the week, with no significant peaks or dips. On non-holidays, energy usage is relatively consistent but shows a slight increase on Thursdays. The highest energy usage duration (72–90 minutes) is predominantly observed during weekends and holidays, indicating increased usage during these times. 
 
+**Insights:**
+The higher energy usage during weekends and holidays suggests that people spend more time at home, likely engaging in activities requiring greater appliance usage, such as cooking or entertainment.
 
+5. How does energy consumption vary across different seasons?
 
+**Energy Consumption By Season**
 
+**Observations:** 
+The distribution is relatively even, with Spring showing the highest energy consumption and Winter the lowest. The differences between seasons are marginal, with a variation of less than 3%.
 
+**Insights:**
+The higher energy consumption in Spring and Summer could be attributed to the increased use of cooling appliances like air conditioners. In contrast, Winter shows the lowest consumption, possibly due to more efficient heating systems or reduced reliance on appliances compared to cooling needs in warmer seasons.
+
+6. How does the temperature setting affect average energy consumption?
+
+**Effect of Temperature on Energy Consumption**
+
+**Observations:** 
+The chart demonstrates a clear upward trend in average energy consumption as the temperature setting increases. At lower temperature settings, energy consumption is minimal but rises steadily with higher temperature settings, peaking at around 22.7°C and above. It shows that as the temperature setting increases, energy consumption also increases and vice varsa.  
+
+**Insights:**
+It indicates that energy consumption increases as the temperature setting rises and decreases as the temperature setting lowers. This relationship suggests that higher energy usage is primarily influenced by heating or cooling systems working to maintain the set temperature.
+
+7.How does seasonal energy consumption vary across different appliance types?
+
+**Seasonal Energy consumption by Appliance Type** 
+
+**Observations:** 
+The heatmap illustrates seasonal variations in energy consumption for various appliances. Appliances such as HVAC and refrigerators show consistently higher energy usage, particularly in summer and winter, likely due to increased cooling and heating demands. In contrast, appliances like dishwashers and washing machines exhibit relatively stable energy consumption across seasons, with minimal seasonal variation.
+
+**Insights:**
+The high energy consumption of HVAC systems and refrigerators during extreme weather conditions suggests that these appliances are the primary drivers of seasonal energy spikes. Energy-saving measures could include optimizing HVAC usage with programmable thermostats and using energy-efficient refrigerators.
+
+8. Which appliances contribute the most to energy consumption in the top 5 homes with maximum energy usage?
+   
+**Top 5 homes with Max Energy Consumption by Appliance Type **
+
+**Observations:** 
+The bar chart shows that HVAC systems and refrigerators are the largest contributors to energy consumption in most of these homes. Homes 56 and 86 exhibit the highest overall energy usage, with HVAC accounting for a significant share in both. Other appliances like lighting, washing machines, and electronics contribute comparatively less but vary in significance across homes.
+
+**Insights:**
+The dominance of HVAC and refrigerators in energy consumption highlights their role in driving high energy usage in these homes. This suggests that targeted strategies, such as energy-efficient HVAC systems, better insulation to reduce HVAC workload, and upgrading refrigerators to more efficient models, could significantly reduce energy usage in these households. 
 
