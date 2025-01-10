@@ -304,3 +304,34 @@ A small subset of homes exhibits consistently long appliance usage durations and
 
 **7. Seasonal and Appliance Insights:**
 HVAC and refrigerators are the primary drivers of energy consumption across all seasons. Managers should consider rebate programs for energy-efficient HVAC systems and refrigerators to reduce long-term energy costs.
+
+# Key Learnings from the Project
+
+**1. Understanding Data Streaming with Apache Flink:**
+
+- Gained hands-on experience with Apache Flink, a powerful framework for real-time data processing.
+- Learned how to efficiently handle streaming data and implement transformations to derive meaningful insights.
+
+**Using Flink SQL for Data Analysis:**
+
+- Explored the capabilities of Flink SQL for querying and processing streaming data in real-time.
+- Understood the importance of Flink SQL's ability to support complex aggregations, filtering, and joins, making it an efficient tool for data manipulation.
+  
+**Data Visualization with Kibana:**
+
+- Developed skills in creating interactive dashboards using Kibana to visualize streaming data.
+- Learned how to use various visualizations like bar charts, pie charts, and timelines to interpret key metrics such as churn propensity, income distribution, and customer demographics.
+  
+**Customer Insights and Churn Analysis:**
+
+- Analyzed customer behavior based on activity types and demographic factors to identify patterns and trends.
+- Understood how churn propensity varies with activity type, enabling data-driven decision-making.
+  
+**Correlation Between Metrics:**
+
+- Discovered relationships between customer income, gender, and activity type to identify valuable insights for targeting and retention strategies.
+
+****Real-Time Data Processing:
+
+- Developed an appreciation for real-time data analytics and its role in deriving actionable insights for businesses.
+- Understood the challenges and solutions associated with managing and analyzing streaming data.
