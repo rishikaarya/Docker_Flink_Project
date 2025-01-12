@@ -30,7 +30,7 @@ Columns:
 
 <img width="650" alt="Screenshot 2025-01-10 at 3 11 22 AM" src="https://github.com/user-attachments/assets/4d5d20b2-c324-4b32-b71d-d1fd8530cd74" />
 
-## Data Pipeline Process
+## Methodology
 
 ### 1. Environment Setup
    
